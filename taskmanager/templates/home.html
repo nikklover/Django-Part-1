@@ -1,11 +1,10 @@
 <h1>HOMEEEE</h1>
-<h2>Крч БАЗАР </h2>
-<p> SOMETHING</p>
-<form>
-<textarea cols='30' rows='10' name='usertext' placeholder="Инфу пж"></textarea>
-<br>
-<input type='submit' value='PUUSH'>
-</br>
+
+<form action="{% url 'ukrop' %}">
+
+<textarea cols='20' rows='5' name='usertext' placeholder="Оставьте отзыв"></textarea>
+
+
 <p>
 <select name='MARKET'>
 	<option value='1'>Ананас </option>
@@ -13,4 +12,10 @@
 	<option value='3'>Дыня </option>
 </select>
 </p>
+
+<br><br>
+<input type='submit' value='PUSH'>
+
+
+
 </form>
