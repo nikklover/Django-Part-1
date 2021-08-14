@@ -7,5 +7,7 @@ def home(request):
 def hoba(request):
 	user_text=request.GET['usertext']
 	r_text=user_text[::-1]
-	return render(request,'hoba.html',{'usertext':user_text})
+	words=user_text.split()
+	number=len(words)
+	return render(request,'hoba.html',{'usertext':user_text,'rtext':r_text,'number':number})
 
